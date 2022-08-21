@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root{
+    --primaryColorCyan: hsl(158, 36%, 37%);
+    --primaryColorCream: hsl(30, 38%, 92%);
+    --netraulColorDarkBlue: hsl(212, 21%, 14%);
+    --netraulColorDarkGrayishBlue: hsl(228, 12%, 48%);
+    --netraulColorWhite:hsl(0, 0%, 100%);
+    --fontText: 'Montserrat' 'san-serif';
+    --fontTitle: 'Fraunces' serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    color: var(--netraulColorDarkGrayishBlue);
+    font-family: var(--fontText);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primaryColorCream);
+
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--netraulColorWhite);
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.278);
+
+    width: 600px;
+}
+
+img{
+    height: 600px;
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 40px;
+}
+
+.product-name{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.product-title{
+    color: var(--netraulColorDarkBlue);
+    font-size: 2em;
+    font-family: var(--fontTitle);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.product-price-container{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.current-price{
+    color: var(--primaryColorCyan);
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.older-price{
+    text-decoration: line-through;
+    vertical-align: super;
+    font-size: small;
+}
+
+.btn{
+    text-align: center;
+    background-color: var(--primaryColorCyan);
+    color: var(--netraulColorWhite);
+
+    border-radius:10px;
+    padding: 10px;
+    
+    cursor: pointer;
+}
+
+.btn svg{
+    margin-right: 10px;
+}
